@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form method='post' action="/process">
+        {% csrf_token %}
+        NO 1:<input type="text" name="txt1">
+        NO 2:<input type="text" name="txt2">
+        <INPUT TYPE='submit'>
+    </form>
+</body>
+</html>

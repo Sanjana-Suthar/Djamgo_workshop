@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="{% static 'style.css' %}" rel="stylesheet"/>
+</head>
+<body>
+
+{% include 'header.html' %}
+<center><img src="{% static 'demo.jpg' %}"/>
+<h1 style="color: rgb(255, 206, 83);"> Home Page....<h1>
+{% include 'menu.html' %} 
+</center>
+
+</body>
+</html>
