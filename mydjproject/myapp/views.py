@@ -31,3 +31,9 @@ def addStudent(request):
             return redirect(addStudent)
         else:
             return render(request, 'add.html', {'form': form})
+
+def displayStudent(request):
+    dbdata = Student.objects.all()
+    context = {'mydata':dbdata}
+    return render(request,'display.html',context)
+

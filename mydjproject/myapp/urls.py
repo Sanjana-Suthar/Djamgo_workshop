@@ -10,4 +10,5 @@ urlpatterns=[
     path("form",views.myform),
     path("process",views.formprocess),
     path("addstudent",views.addStudent),
+    path("display",views.displayStudent),
 ]
